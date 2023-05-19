@@ -29,7 +29,6 @@ formWeather.addEventListener('submit', (event) => {
     async function getResponse() {
         const response = await fetch(query);
         const json = await response.json();
-        console.log(json)
 
         if (json.error) {
             if (json.error.code === 1006) {
