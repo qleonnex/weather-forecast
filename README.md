@@ -11,7 +11,7 @@ Requests are made using the API, which I converted to JSON format using the `obj
 - Incorrect city (The name of the city is entered incorrectly)
 
 ### 🗂️ Future plans for the site
-- [ ] Delete the stage with the error about the incorrect name of the city and issue it as an error notification
+- [ ] Remove the ability to send a request in languages other than English, since the API does not interact well with other languages.
 - [ ] Make adaptive for mobile devices, etc.
 - [ ] Rewrite the site to React
 
