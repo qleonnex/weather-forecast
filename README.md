@@ -11,7 +11,7 @@ Requests are made using the API, which I converted to JSON format using the `obj
 - Incorrect city (The name of the city is entered incorrectly)
 
 ### 🗂️ Future plans for the site
-- [ ] Remove the ability to send a request in languages other than English, since the API does not interact well with other languages.
+- [x] Remove the ability to send a request in languages other than English, since the API does not interact well with other languages. [COMPLETED]
 - [ ] Make adaptive for mobile devices, etc.
 - [ ] Rewrite the site to React
 
