@@ -1,51 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-body {
-    background-color: #111111;
-
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    max-width: 640px;
-    height: 80vh;
-    margin: 0 auto;
-
-    overflow: hidden;
-    transition: max-width .3s ease;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-
-    margin: 46px 0 0 0;
-}
-
-.section-feature {
-    background-color: #161616;
-    padding: 48px 58px;
-    border-radius: 32px;
-}
-
-.content-wrapper {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-
-$primary-color: #0057FF;
-
 // sections
-@import '../base/reset';
+@import './reset';
+@import './vars';
+@import './media';
+@import './components';
+
 @import '../sections/form';
 @import '../sections/weather';
+@import '../sections/notifications'
