@@ -10,6 +10,7 @@
 </head>
 <body>
     
+    <div class="notifications"></div>
     
     <div class="header">
         <svg width="122" height="35" viewBox="0 0 122 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,8 +39,10 @@
                 <div class="weather__info weather-hidden">
                     <aside class="weather__aside">
                         <div class="weather__inner">
-                            <h2 class="weather__city">Los Angeles</h2>
-                            <p class="weather__county">Thursday, April 27</p>
+                            <div class="weather__text">
+                                <h2 class="weather__city">Los Angeles</h2>
+                                <p class="weather__county">USA</p>
+                            </div>
                             <h1 class="weather__degree"><span class="weather__degree-num">26</span>°</h1>
                             <ul class="weather__items">
                                 <li class="weather__item">
@@ -115,6 +118,7 @@
             </section>
         </div>
     </div>
+
     <script src="source/scripts/app.js"></script>
 </body>
 </html>
