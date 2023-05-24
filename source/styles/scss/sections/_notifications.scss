@@ -1,0 +1,71 @@
+.notifications {
+    position: absolute;
+    top: 100px;
+    right: 28px;
+
+    width: 436px;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $section;
+
+    transform: translateX(460px);
+    margin: 12px 0 0 0;
+    padding: 20px;
+
+    border-radius: 16px;
+    transition: .3s ease;
+}
+
+.notification-active {
+    transform: translateX(0);
+    transition: transform .3s ease;
+}
+
+.notification__icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &::after {
+        content: '';
+
+        position: absolute;
+        right: -14px;
+
+        background-color: rgba($white, .05);
+        width: 1px;
+        height: 10px;
+    }
+
+    .notification__icon {
+        min-width: 28px;
+    }
+}
+
+.notification__text {
+    color: #D0D0D0;
+    margin: 0 54px 0 32px;
+}
+
+.notification__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    &:hover svg path {
+        fill: rgba($white, 0.5);
+    }
+
+    & svg {
+        min-width: 10px;
+        transition: .3s ease;
+    }
+
+    & svg path {
+        transition: fill .3s ease;
+    }
+}
