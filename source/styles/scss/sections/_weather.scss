@@ -37,7 +37,7 @@
 }
 
 .weather__county {
-    color: #8A8A8A;
+    color: $gray;
 }
 
 .weather__degree {
@@ -68,7 +68,7 @@
         top: 24px;
         right: -36px;
 
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba($white, 0.1);
         width: 1px;
         height: 16px;
     }
@@ -78,7 +78,7 @@
     position: absolute;
     left: -20px;
 
-    background-color: #161616;
+    background-color: $section;
     padding: 28px 30px;
     border-radius: 50%;
 
@@ -108,7 +108,7 @@
 }
 
 .weather__error-subtitle {
-    color: rgba(255, 255, 255, .6);
+    color: rgba($white, .6);
     font-size: 16px;
     text-align: center;
 
@@ -155,39 +155,39 @@
 }
 
 .weather__city-loading {
-    background-color: #FFFFFF;
+    background-color: $white;
     opacity: .1;
     width: 180px;
-    height: 32px;
+    height: 26px;
 }
 
 .weather__date-loading {
-    background-color: #FFFFFF;
+    background-color: $white;
     opacity: .05;
     width: 130px;
-    height: 18px;
+    height: 14px;
 
     margin: 8px 0 0 0;
 }
 
 .weather__degree-loading {
-    background-color: #FFFFFF;
+    background-color: $white;
     opacity: .1;
     width: 162px;
-    height: 102px;
+    height: 94px;
 
-    margin: 28px 0 30px 0;
+    margin: 24px 0 26px 0;
 }
 
 .weather__icon-loading {
-    background-color: #FFFFFF;
+    background-color: $white;
     opacity: .1;
     width: 38px;
     height: 36px;
 }
 
 .weather__value-loading {
-    background-color: #FFFFFF;;
+    background-color: $white;
     opacity: .05;
     width: 42px;
     height: 18px;
