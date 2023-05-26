@@ -4,6 +4,15 @@
     right: 28px;
 
     width: 436px;
+
+    @include media-minitablet {
+        width: 90%;
+        right: 24px;
+    }
+
+    @include media-mobile {
+        right: 18px;
+    }
 }
 
 .notification {

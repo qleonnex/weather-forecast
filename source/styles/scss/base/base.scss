@@ -3,9 +3,9 @@
 // sections
 @import './reset';
 @import './vars';
-@import './media';
+@import './mixins';
 @import './components';
 
 @import '../sections/form';
 @import '../sections/weather';
-@import '../sections/notifications'
+@import '../sections/notifications';

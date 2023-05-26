@@ -14,12 +14,20 @@
     align-items: center;
     width: 640px;
 
+    @include media-tablet {
+        width: 90%;
+    }
+
     transition: .3s ease;
 }
 
 .weather__info {
     display: flex;
     justify-content: space-between;
+
+    @include media-point {
+        display: block;
+    }
 }
 
 .weather.weather-active {
@@ -28,6 +36,12 @@
 
 .weather__inner {
     position: relative;
+}
+
+.weather__text {
+    @include media-point {
+        transform: translateX(76px);
+    }
 }
 
 .weather__city {
@@ -74,6 +88,14 @@
     }
 }
 
+.weather__image {
+    @include media-point {
+        position: absolute;
+        width: 60px;
+        transform: translateY(-258px);
+    }
+}
+
 .weather__return {
     position: absolute;
     left: -20px;
@@ -97,20 +119,38 @@
     align-items: center;
 }
 
+.weather__error svg {
+    @include media-mobile {
+        width: 42px;
+    }
+}
+
 .weather__error-text {
     margin: 32px 0 0 0;
+
+    @include media-mobile {
+        margin: 24px 0 0 0;
+    }
 }
 
 .weather__error-title {
     font-size: 24px;
     font-weight: 500;
     text-align: center;
+
+    @include media-mobile {
+        font-size: 18px;
+    }
 }
 
 .weather__error-subtitle {
     color: rgba($white, .6);
     font-size: 16px;
     text-align: center;
+
+    @include media-mobile {
+        font-size: 14px;
+    }
 
     margin: 4px 0 0 0;
 }
@@ -120,6 +160,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-point {
+        display: block;
+    }
 }
 
 .loading-light {
@@ -159,6 +203,11 @@
     opacity: .1;
     width: 180px;
     height: 26px;
+
+    @include media-point {
+        width: 120px;
+        transform: translateX(100px);
+    }
 }
 
 .weather__date-loading {
@@ -166,6 +215,11 @@
     opacity: .05;
     width: 130px;
     height: 14px;
+
+    @include media-point {
+        width: 100px;
+        transform: translateX(100px);
+    }
 
     margin: 8px 0 0 0;
 }
@@ -197,4 +251,10 @@
 
 .weather__image-loading {
     opacity: .1;
+
+    @include media-point {
+        position: absolute;
+        width: 80px;
+        transform: translateY(-270px);
+    }
 }

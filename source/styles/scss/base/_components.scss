@@ -26,6 +26,10 @@ body {
     display: flex;
     justify-content: center;
 
+    @include media-minitablet {
+        height: 28px;
+    }
+
     margin: 46px 0 0 0;
 }
 
