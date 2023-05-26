@@ -12,7 +12,7 @@ Requests are made using the API, which I converted to JSON format using the `obj
 
 ### 🗂️ Future plans for the site
 - [x] Remove the ability to send a request in languages other than English, since the API does not interact well with other languages. [COMPLETED]
-- [x] Make adaptive for mobile devices, etc.
+- [x] Make adaptive for mobile devices, etc. [COMPLETED]
 - [ ] Rewrite the site to React
 
 ---
