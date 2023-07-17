@@ -20,5 +20,3 @@ Requests are made using the API, which I converted to JSON format using the `obj
 This was my first site that I decided to post on GitHub.
 
 👋 Thanks for your attention!
-
-TEST
